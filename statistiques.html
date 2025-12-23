@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistiques - LoveConnect</title>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+            min-height:100vh;display:flex;flex-direction:column;
+        }
+        header{
+            background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);
+            padding:1rem 2rem;box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1{color:white;font-size:1.8rem;margin-bottom:0.5rem;}
+        nav ul{list-style:none;display:flex;gap:2rem;}
+        nav a{
+            color:white;text-decoration:none;padding:0.5rem 1rem;
+            border-radius:8px;font-weight:500;transition:.3s;
+        }
+        nav a:hover{
+            background:rgba(255,255,255,0.2);
+            transform:translateY(-2px);
+        }
+
+        .container{
+            flex:1;display:flex;justify-content:center;align-items:center;padding:2rem;
+        }
+
+        .card{
+            background:white;border-radius:20px;padding:2.5rem;
+            width:100%;max-width:450px;text-align:center;
+            box-shadow:0 20px 60px rgba(0,0,0,0.3);
+            animation:slideUp .5s ease;
+        }
+        @keyframes slideUp{
+            from{opacity:0;transform:translateY(30px);}
+            to{opacity:1;transform:translateY(0);}
+        }
+
+        h2{color:#333;margin-bottom:1.5rem;}
+        .stat{
+            background:#f1f1f1;border-radius:12px;padding:1rem;
+            margin-bottom:1rem;font-size:1.2rem;font-weight:600;color:#444;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>💕 LoveConnect</h1>
+    <nav>
+        <ul>
+            <li><a href="profile.php">Profil</a></li>
+            <li><a href="chat.html">Chat</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Vos statistiques</h2>
+
+        <div class="stat">❤ Likes reçus : 0</div>
+        <div class="stat">🔥 Matchs : 0</div>
+        <div class="stat">💬 Messages envoyés : 0</div>
+        <div class="stat">👀 Vues du profil : 0</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Fichiers à NE PAS partager
+config.php
+*.log
+error_log
